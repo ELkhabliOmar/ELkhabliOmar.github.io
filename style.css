@@ -175,6 +175,14 @@ section {
     z-index: 99;
 }
 
+.home-content .animated-title {
+    position: relative;
+    font-size: 2.8rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--main-color);
+}
+
 .home-content h1 {
     position: relative;
     display: inline-block;
@@ -238,6 +246,7 @@ section {
     justify-content: space-between;
     width: 34.5rem;
     height: 5rem;
+    margin-bottom: 4rem; /* Ajout de la marge en bas */
 }
 
 .btn-box .btn {
@@ -1390,8 +1399,3 @@ span {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
 }
-
-
-
-
-
