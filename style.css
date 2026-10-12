@@ -56,6 +56,87 @@ body.dark-mode .home {
         background-position: center;
     
 }
+/* items */
+
+
+
+/* =========================
+   EXPERIENCES PRO
+========================= */
+
+#education .experience-card .content,
+#education .education-content .content {
+    padding: 2.2rem 2.5rem;
+    border: 0.2rem solid var(--main-color);
+    border-radius: 1rem;
+}
+
+/* Date */
+#education .education-content .content .year {
+    font-size: 1.35rem;
+    margin-bottom: 0.8rem;
+}
+
+/* Titre du poste */
+#education .education-content .content h3 {
+    font-size: 1.9rem;
+    line-height: 1.4;
+    margin-bottom: 1.2rem;
+}
+
+/* Liste des missions */
+#education .education-content .content ul {
+    padding-left: 2rem;
+    margin: 1rem 0 1.5rem 0;
+}
+
+#education .education-content .content ul li {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    margin-bottom: 0.8rem;
+    padding-left: 0.4rem;
+}
+
+/* Technologies */
+#education .education-content .content p {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    margin-top: 1.4rem;
+}
+
+/* Mot Technologies */
+#education .education-content .content p strong {
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+/* Espacement entre chaque expérience */
+#education .education-content {
+    margin-bottom: 2.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Bouton global */
 .btnn {
     display: flex;
@@ -589,6 +670,98 @@ span {
 
 .skills-content .progress {
     padding: 1rem 0;
+}
+/* =========================================
+   FORCE LES 2 COLONNES SKILLS À MÊME HAUTEUR
+========================================= */
+
+#skills .skills-row {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 5rem;
+    align-items: stretch !important;
+}
+
+#skills .skills-column {
+    display: grid !important;
+    grid-template-rows: auto 1fr;
+    min-width: 0;
+}
+
+#skills .skills-box {
+    display: flex !important;
+    height: 100% !important;
+    min-height: 100% !important;
+}
+
+#skills .skills-content {
+    width: 100%;
+    height: 100% !important;
+
+    display: grid !important;
+    grid-template-rows: repeat(3, 1fr);
+
+    padding: 1.5rem 2rem;
+}
+
+/* Chaque compétence occupe la même hauteur */
+#skills .skills-content .progress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 1.5rem 0;
+    margin: 0;
+}
+
+/* Titres principaux des colonnes */
+#skills .skills-column .title {
+    min-height: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    #skills .skills-row {
+        grid-template-columns: 1fr;
+    }
+
+    #skills .skills-box {
+        height: auto !important;
+        min-height: auto !important;
+    }
+
+    #skills .skills-content {
+        height: auto !important;
+        grid-template-rows: auto;
+    }
+}
+.skills-content .progress p {
+    font-size: 1.4rem !important;
+    line-height: 1.7;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+}
+.skills-row {
+    align-items: stretch;
+}
+
+.skills-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-box {
+    flex: 1;
+    display: flex;
+}
+
+.skills-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .skills-content .progress h3 {
